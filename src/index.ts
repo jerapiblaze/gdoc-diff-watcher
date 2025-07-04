@@ -39,6 +39,8 @@ async function run(env: any, checkPoint: boolean = false) {
     diffContentHtml += `<p style="color: yellow;"> <i> Last CheckTime: ${lastNow} </i> </p>`;
     diffContentHtml += `<p style="color: blue;"> <i> Current CheckTime: ${now} </i> </p>`;
     diffContentHtml += `<p> ----------------------------------------------------- </p>`;
+    diffContentHtml += `<p> Legends: <a style="color: grey;"> unchanged </a> <a style="color: green;"> added </a> <a style="color: red;"> removed </a> </p>`;
+    diffContentHtml += `<p> ----------------------------------------------------- </p>`;
     diff.forEach((part: any) => {
         let style = part.added ? `"color: green;"` :
             part.removed ? `"color: red";` : `"color: grey;"`;
