@@ -8,6 +8,9 @@ crons = [ "0 0 * * *" ]
 [placement]
 mode = "smart"
 
+[observability]
+enabled = true
+
 [env.ifsclchangelog]
 
 kv_namespaces = [
