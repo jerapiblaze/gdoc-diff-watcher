@@ -5,6 +5,14 @@ compatibility_date = "2023-12-22"
 [triggers]
 crons = [ "0 0 * * *" ]
 
-[env.prod]
+[env.ifsclchangelog]
+
+kv_namespaces = [
+    { binding = "DOC_CACHE", id = "27760caf375f42f19174689a7fb7e1f3" }
+]
 
 [env.demo]
+
+kv_namespaces = [
+    { binding = "DOC_CACHE", id = "/change/to/your/KV/namespace/id/" }
+]
