@@ -5,6 +5,9 @@ compatibility_date = "2023-12-22"
 [triggers]
 crons = [ "0 0 * * *" ]
 
+[placement]
+mode = "smart"
+
 [env.ifsclchangelog]
 
 kv_namespaces = [
