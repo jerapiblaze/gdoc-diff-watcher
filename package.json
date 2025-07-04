@@ -1,0 +1,21 @@
+{
+  "name": "gdoc-diff-watcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250704.0",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.23.0"
+  },
+  "dependencies": {
+    "diff": "^8.0.2"
+  }
+}

@@ -1,0 +1,10 @@
+name = "gdoc-watcher"
+main = "src/index.ts"
+compatibility_date = "2023-12-22"
+
+[triggers]
+crons = [ "0 0 * * *" ]
+
+[env.prod]
+
+[env.demo]
