@@ -32,7 +32,7 @@ async function run(env: any, checkPoint: boolean = false) {
     const diff = diffLines(lastText, currentText);
 
     var diffFileContent = `${docTitle}\n`;
-    var diffContentHtml = `<html><head><title> Diff check for GDOC:${docId} at ${now}</title> <meta content="text/html; charset=utf-8" http-equiv="content-type"> </head><body><div><span>`;
+    var diffContentHtml = `<html><head><title> Diff check for GDOC: "${docTitle}" at ${now}</title> <meta content="text/html; charset=utf-8" http-equiv="content-type"> </head><body><div><span>`;
     diffContentHtml += `<p> ----------------------------------------------------- </p>`;
     diffContentHtml += `<p style="font-size: small;"> Document title: <b style="font-size: large;"> ${docTitle} </b> </p>`;
     diffContentHtml += `<p style="color: grey; font-size: small;"> Document ID: <i> <a target="blank" href="https://docs.google.com/document/d/${docId}"> ${docId} </a> </i> </p>`;
