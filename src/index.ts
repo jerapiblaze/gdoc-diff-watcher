@@ -34,10 +34,10 @@ async function run(env: any, checkPoint: boolean = false) {
     var diffFileContent = `${docTitle}\n`;
     var diffContentHtml = `<html><head><title> Diff check for GDOC:${docId} at ${now}</title> <meta content="text/html; charset=utf-8" http-equiv="content-type"> </head><body><div><span>`;
     diffContentHtml += `<p> ----------------------------------------------------- </p>`;
-    diffContentHtml += `<p> Document title: <b> ${docTitle} </b> </p>`;
-    diffContentHtml += `<p style="color: grey;"> Document ID: <i> ${docId} </i> </p>`;
-    diffContentHtml += `<p style="color: yellow;"> <i> Last CheckTime: ${lastNow} </i> </p>`;
-    diffContentHtml += `<p style="color: blue;"> <i> Current CheckTime: ${now} </i> </p>`;
+    diffContentHtml += `<p style="font-size: small;"> Document title: <b style="font-size: large;"> ${docTitle} </b> </p>`;
+    diffContentHtml += `<p style="color: grey; font-size: small;"> Document ID: <i> <a target="blank" href="https://docs.google.com/document/d/${docId}"> ${docId} </a> </i> </p>`;
+    diffContentHtml += `<p style="color: yellow; font-size: small;"> <i> Last CheckTime: ${lastNow} </i> </p>`;
+    diffContentHtml += `<p style="color: blue; font-size: small;"> <i> Current CheckTime: ${now} </i> </p>`;
     diffContentHtml += `<p> ----------------------------------------------------- </p>`;
     diffContentHtml += `<p> Legends: <a style="color: grey;"> unchanged </a> <a style="color: green;"> added </a> <a style="color: red;"> removed </a> </p>`;
     diffContentHtml += `<p> ----------------------------------------------------- </p>`;
